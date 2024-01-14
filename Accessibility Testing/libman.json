@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery-datetimepicker@2.5.20",
+      "destination": "wwwroot/lib/jquery-datetimepicker/",
+      "files": [
+        "jquery.datetimepicker.css",
+        "jquery.datetimepicker.full.js",
+        "jquery.datetimepicker.full.min.js",
+        "jquery.datetimepicker.js",
+        "jquery.datetimepicker.min.css",
+        "jquery.datetimepicker.min.js"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "jtsage-datebox-jqm@5.3.3",
+      "destination": "wwwroot/lib/jtsage-datebox-jqm/"
+    },
+    {
+      "library": "jqueryui@1.13.2",
+      "destination": "wwwroot/lib/jqueryui/"
+    }
+  ]
+}

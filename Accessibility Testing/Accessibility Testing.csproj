@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Accessibility_Testing</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\.gitignore" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\.jshintrc" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\.travis.yml" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\CHANGELOG.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\CONTRIBUTING.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\Gruntfile.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\legacy.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\picker.date.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\picker.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\picker.time.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ar.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\bg_BG.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\bs_BA.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ca_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\cs_CZ.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\da_DK.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\de_DE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\el_GR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\es_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\et_EE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\eu_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\fa_IR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\fi_FI.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\fr_FR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ge_GEO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\gl_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\he_IL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\hi_IN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\hr_HR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\hu_HU.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\id_ID.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\is_IS.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\it_IT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ja_JP.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\km_KH.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ko_KR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\lt_LT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\lv_LV.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\nb_NO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ne_NP.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\nl_NL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\no_NO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\pl_PL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\pt_BR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\pt_PT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ro_RO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\ru_RU.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\sk_SK.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\sl_SI.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\sr_RS_cy.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\sr_RS_lt.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\sv_SE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\th_TH.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\tr_TR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\uk_UA.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\vi_VN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\zh_CN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\compressed\translations\zh_TW.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\legacy.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\picker.date.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\picker.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\picker.time.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\base.date.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\base.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\base.time.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\classic.date.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\classic.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\classic.time.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\default.date.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\default.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\default.time.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\rtl.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\themes-source\_variables.less" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ar.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\bg_BG.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\bs_BA.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ca_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\cs_CZ.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\da_DK.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\de_DE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\el_GR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\es_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\et_EE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\eu_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\fa_IR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\fi_FI.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\FORMATTING.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\fr_FR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ge_GEO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\gl_ES.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\he_IL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\hi_IN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\hr_HR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\hu_HU.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\id_ID.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\is_IS.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\it_IT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ja_JP.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\km_KH.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ko_KR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\lt_LT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\lv_LV.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\NAMING.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\nb_NO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ne_NP.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\nl_NL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\pl_PL.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\pt_BR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\pt_PT.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ro_RO.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\ru_RU.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\sk_SK.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\sl_SI.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\sr_RS_cy.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\sr_RS_lt.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\sv_SE.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\th_TH.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\tr_TR.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\uk_UA.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\vi_VN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\zh_CN.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\lib\translations\zh_TW.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\LICENSE.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\README.md" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\tests\units\base.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\tests\units\date.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\tests\units\time.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\version-bump.js" />
+    <None Include="wwwroot\Scripts\LightweightDateInputPicker\version-commit.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

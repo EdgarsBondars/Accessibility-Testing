@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-date-range-picker": "^1.0.4",
+    "jquery-datetimepicker": "^2.5.21"
+  }
+}
