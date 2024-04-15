@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<img src="~/images/my-image.jpg">
+@* awdwa *@
+<video controls>
+    <source src="~/videos/my-video.mp4" type="video/mp4">
+</video>
+
+@* Success Criterion 1.3.2 Meaningful Sequence violation *@
+<div style="display: flex; flex-direction: row-reverse;">
+    <div>2. This visually appears second, but is first in the DOM.</div>
+    <div>1. This visually appears first, but is second in the DOM.</div>
+</div>
