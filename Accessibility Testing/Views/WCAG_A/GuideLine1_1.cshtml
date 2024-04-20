@@ -4,14 +4,377 @@
 @{
 }
 
+
+@* Success Criterion 1.1.1 Non-text Content *@
 <img src="~/images/my-image.jpg">
-@* awdwa *@
+
+@* Success Criterion 1.2.1-1.2.9 Audio-only and Video-only (Prerecorded) *@
 <video controls>
     <source src="~/videos/my-video.mp4" type="video/mp4">
 </video>
+
+<audio src="audio.mp3" controls></audio>
+
+@* Success Criterion 1.3.1 Info and Relationships *@
+<div onclick="location.href='https://example.com';" style="cursor: pointer;">Click me</div>
+
+<div class="header">This is a header</div>
+<div class="paragraph">This is a paragraph.</div>
 
 @* Success Criterion 1.3.2 Meaningful Sequence violation *@
 <div style="display: flex; flex-direction: row-reverse;">
     <div>2. This visually appears second, but is first in the DOM.</div>
     <div>1. This visually appears first, but is second in the DOM.</div>
 </div>
+
+@* Success Criterion 1.3.3 Sensory Characteristics *@
+<p>Click the round button to submit the form.</p>
+<button>Submit</button>
+
+@* Success Criterion 1.3.4 Orientation *@
+<script>
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation == 90 || window.orientation == -90) {
+            alert("Please use portrait mode!");
+        }
+    });
+</script>
+
+@* Success Criterion 1.3.5 Identify Input Purpose *@
+<form>
+    <input type="text" id="input1" name="input1">
+</form>
+
+    @* Success Criterion 1.3.6 Identify Purpose *@
+<div id="nav">
+    <div onclick="location.href='home.html';">Home</div>
+    <div onclick="location.href='about.html';">About</div>
+    <div onclick="location.href='contact.html';">Contact</div>
+</div>
+
+    @* Success Criterion 1.4.1 Use of Color *@
+    <div style="color: red;">This text is red.</div>
+
+    @* Success Criterion 1.4.2 Audio Control *@
+    <audio src="audio.mp3" autoplay></audio>
+    
+	@* Success Criterion 1.4.3 Contrast (Minimum) *@
+	<div style="color: #767676; background-color: #ffffff;">This text has a low contrast ratio.</div>
+
+    @* Success Criterion 1.4.4 Resize Text *@
+    <div style="font-size: 10px;">This text is very small and may not be resizable in all browsers.</div>
+
+    @* Success Criterion 1.4.5 Images of Text *@
+    <img src="~/images/my-image.jpg">
+
+    @* Success Criterion 1.4.6 Contrast (Enhanced) *@
+    <div style="color: #767676; background-color: #ffffff;">This text has a low contrast ratio.</div>
+
+    @* Success Criterion 1.4.7 Low or No Background Audio *@
+    <audio src="audio.mp3" autoplay></audio>
+
+    @* Success Criterion 1.4.8 Visual Presentation *@
+    <div style="width: 2000px;">This text is wider than the viewport and may require horizontal scrolling.</div>
+
+    @* Success Criterion 1.4.9 Images of Text (No Exception) *@
+    <img src="~/images/my-image.jpg">
+
+    @* Success Criterion 1.4.10 Reflow *@
+    <div style="width: 2000px;">This text is wider than the viewport and may require horizontal scrolling.</div>
+
+    @* Success Criterion 1.4.11 Non-text Contrast *@
+    <div style="border: 1px solid #dddddd;">This element has a border with low contrast.</div>
+
+    @* Success Criterion 1.4.12 Text Spacing *@
+    <div style="line-height: 1;">This text has a line height of 1, which may be too small.</div>
+
+    @* Success Criterion 1.4.13 Content on Hover or Focus *@
+    <div onmouseover="this.style.color='red';">Hover over me!</div>
+
+
+    @* Success Criterion 2.1.1 Keyboard *@
+    <div onclick="alert('Clicked!')">Click me</div>
+
+    @* Success Criterion 2.1.2 No Keyboard Trap *@
+    <div tabindex="0">Focus me and press Tab to move to the next element.</div>
+    <input type="text" id="myInput">
+
+    <script>
+
+        let input = document.getElementById('myInput');
+        input.addEventListener('focus', function() {
+        this.addEventListener('keydown', function(event) {
+            event.preventDefault();
+            });
+        });
+    </script>
+
+	@* Success Criterion 2.1.3 Keyboard (No Exception) *@
+<button id="myButton">Press Enter</button>
+
+<script>
+    let button = document.getElementById('myButton');
+    button.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            setTimeout(function () {
+                alert('You pressed the Enter key!');
+            }, 2000);
+        }
+    });
+</script>
+
+    @* Success Criterion 2.1.4 Character Key Shortcuts *@
+<button id="myButton">Press 's'</button>
+
+<script>
+    let button = document.getElementById('myButton');
+    button.addEventListener('keydown', function (event) {
+        if (event.key === 's') {
+            event.preventDefault();
+            alert('You pressed the "s" key!');
+        }
+    });
+</script>
+
+@* Success Criterion 2.2.1 Timing Adjustable *@
+ 
+<div id="timer">You have 10 seconds to read this message.</div>
+
+<script>
+    setTimeout(function () {
+        document.getElementById('timer').style.display = 'none';
+    }, 10000);
+</script>
+
+    @* Success Criterion 2.2.2 Pause, Stop, Hide *@
+<marquee id="scrollingText">This text will keep scrolling across the screen.</marquee>
+
+@* Success Criterion 2.2.3 No Timing *@
+@* <script>
+    setTimeout(function () {
+        window.location.href = 'https://example.com';
+    }, 5000); // Redirects to example.com after 5 seconds
+</script> *@
+
+@* Success Criterion 2.2.4 Interruptions *@
+ <script>
+	setTimeout(function () {
+		alert('This is an alert!');
+	}, 5000); // Shows an alert after 5 seconds
+@* Success Criterion 2.2.5 Re-authenticating*@
+    // Can't be done
+
+@* Success Criterion 2.2.6 Timeouts*@
+    // Can't be done
+
+@* Success Criterion 2.3.1 Three Flashes or Below Threshold *@
+@* Success Criterion 2.3.2 Three Flashes*@
+
+<div id="flashingText">This text will flash.</div>
+
+<script>
+    setInterval(function () {
+        let flashingText = document.getElementById('flashingText');
+        flashingText.style.visibility = (flashingText.style.visibility === 'hidden' ? '' : 'hidden');
+    }, 250); // Flashes 4 times per second
+</script>
+    
+
+@* Success Criterion 2.3.3 Animation from Interactions *@
+<button id="animatedButton">Click me</button>
+
+<div id="animatedDiv" style="width: 100px; height: 100px; background: red;"></div>
+
+<script>
+    document.getElementById('animatedButton').addEventListener('click', function () {
+        let animatedDiv = document.getElementById('animatedDiv');
+        animatedDiv.style.transition = "all 2s";
+        animatedDiv.style.width = "200px";
+    });
+</script>
+
+@* Success Criterion 2.4.1 Bypass Blocks *@
+@* Success Criterion 2.4.1 Bypass Blocks *@
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+<main>
+    <!-- Main content goes here -->
+</main>
+
+@* Success Criterion 2.4.2 Page Titled *@
+@* Success Criterion 2.4.2 Page Titled *@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- No title provided -->
+</head>
+<body>
+    <!-- Page content goes here -->
+</body>
+</html>
+
+@* Success Criterion 2.4.3 Focus Order *@
+
+<button style="position: absolute; right: 0;">2. This visually appears second, but is first in the tab order.</button>
+<button>1. This visually appears first, but is second in the tab order.</button>
+
+@* Success Criterion 2.4.4 Link Purpose (In Context) *@
+<a href="https://example.com">Click here</a>
+@* Success Criterion 2.4.5 Multiple Ways *@
+// Not sure
+@* Success Criterion 2.4.6 Headings and Labels *@
+<label for="myInput">Field</label>
+<input type="text" id="myInput">
+@* Success Criterion 2.4.7 Focus Visible *@
+<input type="text" id="myInput" style="outline: none;">
+@* Success Criterion 2.4.8 Location *@
+// Not sure
+@* Success Criterion 2.4.9 Link Purpose (Link Only) *@
+<a href="https://example.com">Click here</a>
+@* Success Criterion 2.4.10 Section Headings *@
+<div>This is a section of content.</div>
+<div>This is another section of content.</div>
+@* Success Criterion 2.5.1 Pointer Gestures *@
+@* Success Criterion 2.5.1 Pointer Gestures *@
+<script>
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            document.getElementById('menu').style.display = 'block';
+        }
+    }
+
+    document.addEventListener('touchstart', function (e) {
+        touchstartX = e.changedTouches[0].screenX;
+    }, false);
+
+    document.addEventListener('touchend', function (e) {
+        touchendX = e.changedTouches[0].screenX;
+        handleGesture();
+    }, false);
+</script>
+@* Success Criterion 2.5.2 Pointer Cancellation *@
+
+<button onmousedown="document.getElementById('myForm').submit();">Submit</button>
+
+@* Success Criterion 2.5.3 Label in Name *@
+<button aria-label="Go">Submit</button>
+@* Success Criterion 2.5.4 Motion Actuation *@
+<script>
+    window.addEventListener('devicemotion', function (event) {
+        if (event.acceleration.x > 5) {
+            document.body.style.backgroundColor = 'red';
+        }
+    });
+</script>
+@* Success Criterion 2.5.5 Target Size *@
+<button style="width: 20px; height: 20px;">Click me</button>
+@* Success Criterion 2.5.6 Concurrent Input Mechanisms *@
+<form id="myForm">
+    <input type="text" id="myInput">
+</form>
+
+<script>
+    document.getElementById('myInput').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            document.getElementById('myForm').submit();
+        }
+    });
+</script>
+
+
+@* Guideline 3.1 Readable *@
+@* Success Criterion 3.1.1 Language of Page *@
+// Every site can be used
+@* Success Criterion 3.1.2 Language of Parts *@
+<p>Welcome to our website! <span>Hola, ¿cómo estás?</span></p>
+@* Success Criterion 3.1.3 Unusual Words *@
+<p>You can use our API to access our data.</p>
+@* Success Criterion 3.1.4 Abbreviations *@
+<p>You can write your website in HTML.</p>
+@* Success Criterion 3.1.5 Reading Level *@
+<p>The antecedent of the pronoun is not clear in this sentence.</p>
+@* Success Criterion 3.1.6 Pronunciation *@
+<p>The term synecdoche is used in this text.</p>
+@* Success Criterion 3.2.1 On Focus *@
+<input type="text" onfocus="location.href='https://example.com';">
+@* Success Criterion 3.2.2 On Input *@
+<form id="myForm">
+    <select onchange="document.getElementById('myForm').submit();">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+    </select>
+</form>
+@* Success Criterion 3.2.3 Consistent Navigation *@
+<!-- On page 1 -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- On page 2 -->
+<nav>
+    <a href="#contact">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+</nav>
+@* Success Criterion 3.2.4 Consistent Identification *@
+<a href="https://example.com">Go to Example.com</a>
+<a href="https://example.com">Visit Example.com</a>
+@* Success Criterion 3.2.5 Change on Request *@
+<script>
+    setTimeout(function () {
+        window.location.href = 'https://example.com';
+    }, 5000); // Redirects to example.com after 5 seconds
+</script>
+
+@* Success Criterion 3.3.1 Error Identification *@
+<form>
+    <input type="email" id="email" required>
+    <button type="submit">Submit</button>
+</form>
+
+@* Success Criterion 3.3.2 Labels or Instructions *@
+<input type="text" id="username">
+@* Success Criterion 3.3.3 Error Suggestion *@
+<form>
+    <input type="email" id="email" required>
+    <button type="submit">Submit</button>
+</form>
+@* Success Criterion 3.3.4 Error Prevention (Legal, Financial, Data) *@
+<form>
+    <input type="text" id="creditCardNumber" required>
+    <button type="submit">Submit</button>
+</form>
+@* Success Criterion 3.3.5 Help *@
+<form>
+    <input type="text" id="CVVCode" required>
+    <button type="submit">Submit</button>
+</form>
+@* Success Criterion 3.3.6 Error Prevention (All) *@
+<form>
+    <input type="text" id="username" required>
+    <button type="submit">Submit</button>
+</form>
+
+@* Success Criterion 4.1.1 Parsing *@
+<!-- This HTML is not well-formed. The input tag is not closed properly -->
+<input type="text" id="username"
+@* Success Criterion 4.1.2 Name, Role, Value *@
+<!-- This button lacks a name, role, and value -->
+<button></button>
+
+@* Success Criterion 4.1.3 Status Messages *@
+<script>
+    function submitForm() {
+        // Form submission logic here...
+        // Status message is not conveyed to the user
+        let status = "Form submitted successfully!";
+    }
+</script>
