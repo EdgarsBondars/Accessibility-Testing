@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@* Success Criterion 1.1.1 Non-text Content *@
+<img src="~/images/my-image.jpg">
+
+@* Success Criterion 1.2.1-1.2.9 Audio-only and Video-only (Prerecorded) *@
+<video controls>
+    <source src="~/videos/my-video.mp4" type="video/mp4">
+</video>
+
+<audio src="audio.mp3" controls></audio>
+
+@* Success Criterion 1.3.1 Info and Relationships *@
+<div onclick="location.href='https://example.com';" style="cursor: pointer;">Click me</div>
+
+<div class="header">This is a header</div>
+<div class="paragraph">This is a paragraph.</div>
+
+@* Success Criterion 1.3.2 Meaningful Sequence violation *@
+<div style="display: flex; flex-direction: row-reverse;">
+    <div>2. This visually appears second, but is first in the DOM.</div>
+    <div>1. This visually appears first, but is second in the DOM.</div>
+</div>
+
+@* Success Criterion 1.3.3 Sensory Characteristics *@
+<p>Click the round button to submit the form.</p>
+<button>Submit</button>
+
+@* Success Criterion 1.3.4 Orientation *@
+<script>
+    window.addEventListener("orientationchange", function () {
+        if (window.orientation == 90 || window.orientation == -90) {
+            alert("Please use portrait mode!");
+        }
+    });
+</script>
+
+@* Success Criterion 1.3.5 Identify Input Purpose *@
+<form>
+    <input type="text" id="input1" name="input1">
+</form>
+
+@* Success Criterion 1.3.6 Identify Purpose *@
+<div id="nav">
+    <div onclick="location.href='home.html';">Home</div>
+    <div onclick="location.href='about.html';">About</div>
+    <div onclick="location.href='contact.html';">Contact</div>
+</div>
+
+@* Success Criterion 1.4.1 Use of Color *@
+<div style="color: red;">This text is red.</div>
+
+@* Success Criterion 1.4.2 Audio Control *@
+<audio src="audio.mp3" autoplay></audio>
+
+@* Success Criterion 1.4.3 Contrast (Minimum) *@
+<div style="color: #767676; background-color: #ffffff;">This text has a low contrast ratio.</div>
+
+@* Success Criterion 1.4.4 Resize Text *@
+<div style="font-size: 10px;">This text is very small and may not be resizable in all browsers.</div>
+
+@* Success Criterion 1.4.5 Images of Text *@
+<img src="~/images/my-image.jpg">
+
+@* Success Criterion 1.4.6 Contrast (Enhanced) *@
+<div style="color: #767676; background-color: #ffffff;">This text has a low contrast ratio.</div>
+
+@* Success Criterion 1.4.7 Low or No Background Audio *@
+<audio src="audio.mp3" autoplay></audio>
+
+@* Success Criterion 1.4.8 Visual Presentation *@
+<div style="width: 2000px;">This text is wider than the viewport and may require horizontal scrolling.</div>
+
+@* Success Criterion 1.4.9 Images of Text (No Exception) *@
+<img src="~/images/my-image.jpg">
+
+@* Success Criterion 1.4.10 Reflow *@
+<div style="width: 2000px;">This text is wider than the viewport and may require horizontal scrolling.</div>
+
+@* Success Criterion 1.4.11 Non-text Contrast *@
+<div style="border: 1px solid #dddddd;">This element has a border with low contrast.</div>
+
+@* Success Criterion 1.4.12 Text Spacing *@
+<div style="line-height: 1;">This text has a line height of 1, which may be too small.</div>
+
+@* Success Criterion 1.4.13 Content on Hover or Focus *@
+<div onmouseover="this.style.color='red';">Hover over me!</div>
